@@ -64,14 +64,12 @@ gcloud compute scp --recurse instance-eugene:/home/eugene/facenet/model_checkpoi
 # set project
 gcloud config set project research-hle
 
-
+###############
+# SSH copy to macbook LOG 
+scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-26___22-41-16/model/IR_50_68.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_casia_epoch68_lfw9903.pth
 ------------------------------------------------------
 
-Saving variables
-Variables saved in 0.13 seconds
-Accuracy: 0.756+-0.022
-Validation rate: 0.04300+-0.01609 @ FAR=0.00167
-Running forward p
+
 
 ------------------------------------------------------
 ------------------------------------------------------
