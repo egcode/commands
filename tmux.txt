@@ -1,0 +1,28 @@
+
+------TMUX:-------------------------------------------------
+tmux ls
+
+# start new with session name
+tmux new -s name
+
+#attach to named
+tmux a -t myname
+
+
+# kill session
+tmux kill-session -t myname
+
+
+
+To enter a tmux session:  
+```tmux```
+
+to exit a tmux session:  
+```Ctrl-b  d```
+
+to enter back into the tmux session:  
+```tmux attach-session -t 0```
+
+# RESTORE tmux
+killall -10 tmux
+
