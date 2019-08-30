@@ -25,13 +25,13 @@ python3 train.py \
 --optimizer_type sgd_bn
 
 
-# ARCFACE CASIA_and_Golovan_160 Epoch- 
-# LFW-  
-# CALFW-  
-# CPLFW- 
-# CFP_FF-   
-# CFP_FP-  
-# LOSS-
+# ARCFACE CASIA_160 Epoch-41
+# LFW-      0.991  
+# CALFW-    0.886  
+# CPLFW-    0.7977
+# CFP_FF-   0.9653  
+# CFP_FP-   0.8961 
+# LOSS-5.681
 python3 train.py \
 --model_type IR_50 \
 --data_dir ./data/CASIA_Webface_160 \
