@@ -45,7 +45,7 @@ python3 train.py \
 --margin_m 0.5 \
 --validation_set_split_ratio 0.0 \
 --lr 0.1 \
---lr_schedule_steps 35 65 85 \
+--lr_schedule_steps 30 60 80 \
 --apex_opt_level 2 
 
 
