@@ -66,16 +66,12 @@ gcloud config set project research-hle
 
 ###############
 ### FROM PC to MAC
-scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-26___22-41-16/model/IR_50_68.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_casia_epoch68_lfw9903.pth
-scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-26___22-41-16/model/arcface_68.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/arcface_lfw9903.pth
-
-scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-28___18-26-44/model/IR_50_31.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_casia_epoch49_lfw9923.pth
-scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-28___18-26-44/model/arcface_31.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/arcface_casia_epoch49_lfw9923.pth
+scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-30___00-05-59/model/IR_50_56.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_casia_epoch56_lfw9925.pth
+scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-30___00-05-59/model/arcface_56.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/arcface_casia_epoch56_lfw9925.pth
 
 ### FROM MAC TO PC
-scp -r  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_casia_epoch49_lfw9923.pth eugene@eugene-station:/home/eugene/pytorch-face/pth/IR_50_MODEL_arcface_casia_epoch49_lfw9923.pth
-
-scp -r  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/data/CASIA_Webface_160.zip eugene@eugene-station:/home/eugene/pytorch-face/data/CASIA_Webface_160.zip
+scp -r  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_casia_golovan_epoch49_lfw9923.pth eugene@eugene-station:/home/eugene/pytorch-face/pth/IR_50_MODEL_arcface_casia_golovan_epoch49_lfw9923.pth
+scp -r  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_casia_epoch56_lfw9925.pth eugene@eugene-station:/home/eugene/pytorch-face/pth/IR_50_MODEL_arcface_casia_epoch56_lfw9925.pth
 
 ------------------------------------------------------
 
