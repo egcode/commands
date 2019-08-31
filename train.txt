@@ -2,13 +2,13 @@
 ===================================================
 ===================================================
 EXAMPLES TRAINED:
-# ARCFACE CASIA_160 Epoch-41
-# LFW-      0.991  
-# CALFW-    0.886  
-# CPLFW-    0.7977
-# CFP_FF-   0.9653  
-# CFP_FP-   0.8961 
-# LOSS-5.681
+# ARCFACE CASIA_160 Epoch-56
+# LFW-      0.9925      
+# CALFW-    0.8727    
+# CPLFW-    0.816  
+# CFP_FF-   0.9714   
+# CFP_FP-   0.9153
+# LOSS-4.402
 python3 train.py \
 --model_type IR_50 \
 --data_dir ./data/CASIA_Webface_160 \
@@ -22,35 +22,11 @@ python3 train.py \
 --margin_m 0.5 \
 --validation_set_split_ratio 0.0 \
 --lr 0.1 \
---lr_schedule_steps 30 60 80 \
+--lr_schedule_steps 30 55 75 \
 --apex_opt_level 2 
 
 
 
-EXAMPLES TRAINED:
-# ARCFACE CASIA_160 Epoch-
-# LFW-      
-# CALFW-    
-# CPLFW-    
-# CFP_FF-   
-# CFP_FP-   
-# LOSS-
-python3 train.py \
---model_type IR_50 \
---data_dir ./data/CASIA_Webface_160 \
---epochs 80 \
---batch_size 128 \
---batch_size_test 128 \
---validate_batch_size 128 \
---criterion_type arcface \
---total_loss_type softmax \
---optimizer_type sgd_bn \
---margin_s 32.0 \
---margin_m 0.5 \
---validation_set_split_ratio 0.0 \
---lr 0.1 \
---lr_schedule_steps 20 35 50 \
---apex_opt_level 2 
 ===================================================
 ===================================================
 ===================================================
