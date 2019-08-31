@@ -75,6 +75,8 @@ scp -r eugene@eugene-station:/home/eugene/pytorch-face/out  /Users/yujin/Documen
 scp -r  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_casia_golovan_epoch49_lfw9923.pth eugene@eugene-station:/home/eugene/pytorch-face/pth/IR_50_MODEL_arcface_casia_golovan_epoch49_lfw9923.pth
 scp -r  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_casia_epoch56_lfw9925.pth eugene@eugene-station:/home/eugene/pytorch-face/pth/IR_50_MODEL_arcface_casia_epoch56_lfw9925.pth
 
+scp -r  /Users/yujin/Documents/Developer/Computer-Vision/face.evoLVe.PyTorch.zip eugene@eugene-station:/home/eugene/face.evoLVe.PyTorch.zip
+
 ------------------------------------------------------
 
 
