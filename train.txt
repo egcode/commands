@@ -14,7 +14,7 @@ python3 train.py \
 --data_dir ./data/CASIA_Webface_160 \
 --batch_size 128 \
 --batch_size_test 128 \
---validate_batch_size 128 \
+--evaluate_batch_size 128 \
 --criterion_type arcface \
 --total_loss_type softmax \
 --optimizer_type sgd_bn \
@@ -38,7 +38,7 @@ python3 train.py \
 --data_dir ./data/MS_Celeb_1M_112 \
 --batch_size 128 \
 --batch_size_test 128 \
---validate_batch_size 128 \
+--evaluate_batch_size 128 \
 --criterion_type arcface \
 --total_loss_type softmax \
 --optimizer_type sgd_bn \
@@ -64,7 +64,7 @@ python3 train.py \
 --data_dir ./data/DeepGlint_112/ \
 --batch_size 128 \
 --batch_size_test 128 \
---validate_batch_size 128 \
+--evaluate_batch_size 128 \
 --criterion_type arcface \
 --total_loss_type softmax \
 --optimizer_type sgd_bn \
@@ -91,7 +91,7 @@ python3 train.py \
 --data_dir ./data/MS_Celeb_1M_112 \
 --batch_size 128 \
 --batch_size_test 128 \
---validate_batch_size 128 \
+--evaluate_batch_size 128 \
 --criterion_type arcface \
 --total_loss_type softmax \
 --optimizer_type sgd_bn \
@@ -126,10 +126,10 @@ TOTAL Schedule --lr_schedule_steps 10 30 50 70 \
 
 python3 train.py \
 --model_type ResNet_50 \
---data_dir ./data/MS_Celeb_1M_112 \
+--data_dir ./data/CASIA_Webface_160 \
 --batch_size 512 \
 --batch_size_test 512 \
---validate_batch_size 512 \
+--evaluate_batch_size 512 \
 --criterion_type arcface \
 --total_loss_type softmax \
 --optimizer_type sgd_bn \

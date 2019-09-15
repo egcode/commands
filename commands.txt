@@ -69,28 +69,11 @@ gcloud config set project research-hle
 scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-30___00-05-59/model/IR_50_56.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_casia_epoch56_lfw9925.pth
 scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-30___00-05-59/model/arcface_56.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/arcface_casia_epoch56_lfw9925.pth
 
-scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-31___12-32-27/model/IR_50_60.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_ms1celeb_epoch60_lfw9958.pth
-scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-31___12-32-27/model/arcface_60.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/arcface_ms1celeb_epoch60_lfw9958.pth
 
-scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-31___12-32-27/model/IR_50_75.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_ms1celeb_epoch75_lfw996.pth
-scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-31___12-32-27/model/arcface_75.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/arcface_ms1celeb_epoch75_lfw996.pth
-
-scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-31___12-32-27/model/IR_50_88.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_ms1celeb_epoch88_lfw9957.pth
-scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-31___12-32-27/model/arcface_88.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/arcface_ms1celeb_epoch88_lfw9957.pth
-
-scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-31___12-32-27/model/IR_50_90.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_ms1celeb_epoch90_lfw9962.pth
-scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-31___12-32-27/model/arcface_90.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/arcface_ms1celeb_epoch90_lfw9962.pth
-
-scp -r eugene@eugene-station:/home/eugene/pytorch-face/out  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/out
+scp -r eugene@eugene-station:/home/eugene/face.recognition/out  /Users/yujin/Documents/Developer/Computer-Vision/face.recognition/out
 
 ### FROM MAC TO PC
-scp -r  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_casia_golovan_epoch49_lfw9923.pth eugene@eugene-station:/home/eugene/pytorch-face/pth/IR_50_MODEL_arcface_casia_golovan_epoch49_lfw9923.pth
-scp -r  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_casia_epoch56_lfw9925.pth eugene@eugene-station:/home/eugene/pytorch-face/pth/IR_50_MODEL_arcface_casia_epoch56_lfw9925.pth
-
-scp -r  /Users/yujin/Documents/Developer/Computer-Vision/face.evoLVe.PyTorch.zip eugene@eugene-station:/home/eugene/face.evoLVe.PyTorch.zip
-scp -r /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_ms1celeb_epoch60_lfw9958.pth eugene@eugene-station:/home/eugene/pytorch-face/pth/IR_50_MODEL_arcface_ms1celeb_epoch60_lfw9958.pth
-scp -r /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_ms1celeb_epoch75_lfw996.pth eugene@eugene-station:/home/eugene/pytorch-face/pth/IR_50_MODEL_arcface_ms1celeb_epoch75_lfw996.pth
-
+scp -r /Users/yujin/Documents/Developer/Computer-Vision/face.recognition/pth/IR_50_MODEL_arcface_ms1celeb_epoch75_lfw996.pth eugene@eugene-station:/home/eugene/face.recognition/pth/IR_50_MODEL_arcface_ms1celeb_epoch75_lfw996.pth
 
 ------------------------------------------------------
 
