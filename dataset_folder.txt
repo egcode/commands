@@ -44,3 +44,13 @@ find . -empty -type d -delete
 
 # Difference folders difference file
 vimdiff <(cd calfw/aligned_images/; find . | sort) <(cd calfw_112/aligned_images/; find . | sort)
+
+
+
+
+### Tar
+tar -czvf MS_Celeb_1M_112_filtered_failed.tar.gz MS_Celeb_1M_112_filtered_failed
+tar -czvf MS_Celeb_1M_112_filtered.tar.gz MS_Celeb_1M_112_filtered
+
+## mac unzip tar
+tar -xzvf MS_Celeb_1M_112_filtered_failed.tar.gz

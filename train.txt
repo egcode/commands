@@ -1,6 +1,6 @@
 ===================================================
 ===================================================
-===================================================
+===================Train===========================
 EXAMPLES TRAINED:
 # ARCFACE CASIA_Webface_160 Epoch-56
 # LFW-      0.9925      
@@ -51,17 +51,16 @@ python3 train.py \
 --model_save_latest_path ./pth_latest
 
 
-
-# ARCFACE DeepGlint_112/ Epoch-
-# LFW-                 
-# CALFW-           
-# CPLFW-        
-# CFP_FF-      
-# CFP_FP-   
-# LOSS-
+# ARCFACE MS_Celeb_1M_112_filtered Epoch-
+# LFW-      0.           
+# CALFW-    0.       
+# CPLFW-    0.    
+# CFP_FF-   0.   
+# CFP_FP-   0.
+# LOSS- 
 python3 train.py \
 --model_type IR_50 \
---data_dir ./data/DeepGlint_112/ \
+--data_dir ./data/MS_Celeb_1M_112_filtered \
 --batch_size 128 \
 --batch_size_test 128 \
 --evaluate_batch_size 128 \
@@ -75,6 +74,28 @@ python3 train.py \
 --lr_schedule_steps 30 55 75 \
 --apex_opt_level 2 \
 --model_save_latest_path ./pth_latest
+
+
+===================================================
+===================================================
+====================Clean Dataset==================
+
+#### Export embeddings
+python3 export_dataset_embeddings.py \
+./pth/IR_50_MODEL_arcface_ms1celeb_epoch90_lfw9962.pth \
+./data/MS_Celeb_1M_112/ \
+--model_type IR_50 \
+--image_batch 128 \
+--h5_name dataset_MS_Celeb_1M_112.h5
+
+#### Dataset Clean
+python3 cluster_clean_dataset.py \
+--affinity cosine \
+--linkage average \
+--distance_threshold 0.7 \
+--h5_name data/dataset_MS_Celeb_1M_112.h5 \
+--output_clean_dataset data/MS_Celeb_1M_112_filtered \
+--output_failed_images data/MS_Celeb_1M_112_filtered_failed
 
 ===================================================
 ===================================================

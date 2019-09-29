@@ -66,9 +66,8 @@ gcloud config set project research-hle
 
 ###############
 ### FROM PC to MAC
-scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-30___00-05-59/model/IR_50_56.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/IR_50_MODEL_arcface_casia_epoch56_lfw9925.pth
-scp -r eugene@eugene-station:/home/eugene/pytorch-face/out/2019-08-30___00-05-59/model/arcface_56.pth  /Users/yujin/Documents/Developer/Computer-Vision/pytorch-face/pth/arcface_casia_epoch56_lfw9925.pth
-
+scp -r eugene@eugene-station:/home/eugene/face.recognition/data/MS_Celeb_1M_112_filtered_failed.tar.gz  /Users/yujin/Documents/Developer/Computer-Vision/face.recognition/data/MS_Celeb_1M_112_filtered_failed.tar.gz
+scp -r eugene@eugene-station:/home/eugene/face.recognition/data/MS_Celeb_1M_112_filtered.tar.gz  /Users/yujin/Documents/Developer/Computer-Vision/face.recognition/data/MS_Celeb_1M_112_filtered.tar.gz
 
 scp -r eugene@eugene-station:/home/eugene/face.recognition/out  /Users/yujin/Documents/Developer/Computer-Vision/face.recognition/out
 
