@@ -165,3 +165,60 @@ python3 train.py \
 ===================================================
 ===================================================
 ===================================================
+
+TODO:
+
+- Find Mobile Model
+- Run in C++
+
+
+
+
+
+----------------
+
+Contents:
+
+0. Installation
+1. Custom Dataset (Lanister vs Targarien dataset creation)
+2. Train
+3. Dataset Cleanup
+
+
+
+
+
+
+
+0.
+
+# with pip
+cd path/to/facerec 
+virtualenv facerec
+source facerec/bin/activate
+pip install -r /path/to/requirements.txt
+...
+deactivate 
+
+
+# with conda
+conda create -y --name facerec python==3.6
+conda install -f -y -q --name facerec -c conda-forge --file requirements.txt
+conda activate facerec
+...
+conda deactivate
+conda env remove -n facerec
+
+
+# with virtualenv
+pip install virtualenv virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source /usr/local/bin/virtualenvwrapper.sh
+source ~/.bashrc
+mkvirtualenv facerec -p python3
+workon facerec
+pip install -r /path/to/requirements.txt
+...
+deactivate
+rmvirtualenv facerec 
