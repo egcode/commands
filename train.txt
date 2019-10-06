@@ -188,7 +188,7 @@ python3 train.py \
 
 TODO:
 +++fix label appearance
-- remove deprecation warnings
++++remove deprecation warnings
 - downlad setups
 - Find Mobile Model
 - Run in C++
