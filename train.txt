@@ -209,8 +209,7 @@ Contents:
 Downloads:
 0. model pth
 1. got folder
-2. lfw ... datasets
-3. dirty dataset and clean this up.
+2. train ... datasets
 
 
 
