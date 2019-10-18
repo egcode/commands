@@ -95,6 +95,25 @@ python3 train.py \
 --apex_opt_level 2 \
 --model_save_latest_path ./pth_latest
 
+# Failed in epock 40 Restore:
+python3 train.py \
+--model_path ./pth_latest/IR_50_latest.pth \
+--loss_path ./pth_latest/arcface_latest.pth \
+--model_type IR_50 \
+--data_dir ./data/MS_Celeb_1M_112_filtered \
+--batch_size 128 \
+--batch_size_test 128 \
+--evaluate_batch_size 128 \
+--criterion_type arcface \
+--total_loss_type softmax \
+--optimizer_type sgd_bn \
+--margin_s 32.0 \
+--margin_m 0.5 \
+--validation_set_split_ratio 0.0 \
+--lr 0.0001 \
+--lr_schedule_steps 30 \
+--apex_opt_level 2 \
+--model_save_latest_path ./pth_latest
 
 ===================================================
 ===================================================
@@ -189,7 +208,7 @@ python3 train.py \
 TODO:
 +++fix label appearance
 +++remove deprecation warnings
-- downlad setups
++++downlad setups
 - Find Mobile Model
 - Run in C++
 
