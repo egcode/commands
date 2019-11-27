@@ -196,8 +196,8 @@ python3 train.py \
 --validation_set_split_ratio 0.0 \
 --lr 0.1 \
 --lr_schedule_steps 20 40 60 \
---apex_opt_level 2 \
 --epochs 100 \
+--apex_opt_level 2 \
 --model_save_latest_path ./pth_latest
 
 
