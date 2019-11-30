@@ -175,12 +175,12 @@ python3 train.py \
 
 ===================Train MobileNet===========================
 EXAMPLES TRAINED:
-# ARCFACE MS_Celeb_1M_112_filtered Epoch-
-# LFW-      0.           
-# CALFW-    0.       
-# CPLFW-    0.    
-# CFP_FF-   0.   
-# CFP_FP-   0.
+# ARCFACE MS_Celeb_1M_112_filtered Epoch-75
+# LFW-      0.9693           
+# CALFW-    0.8095       
+# CPLFW-    0.6127    
+# CFP_FF-   0.9684   
+# CFP_FP-   0.7926
 # LOSS- 
 python3 train.py \
 --model_type MobileNet \
