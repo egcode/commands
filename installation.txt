@@ -1,0 +1,107 @@
+
+TODO:
++++fix label appearance
++++remove deprecation warnings
++++downlad setups
++++Find Mobile Model
+- Run in C++
+
+
+
+
+# Fixes error ImportError: cannot import name 'PILLOW_VERSION' from 'PIL'
+conda install pillow=6.1
+
+https://pytorch.org/get-started/previous-versions/
+
+# CUDA 10.0
+conda install pytorch==1.2.0 torchvision==0.4.0 cudatoolkit=10.0 -c pytorch
+
+conda install scikit-learn==0.21.1 
+
+
+
+
+
+conda install --file requirements.txt
+
+
+
+
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+------------------------------------CONDA ENVIRONMENT-----------------------
+# create environment
+conda create --name myenv
+
+# create environment with requirements
+conda create --name <env_name> --file <.txt file>
+conda create --name fom --file requirements.txt # example
+
+# activate environment
+source ~/anaconda3/etc/profile.d/conda.sh
+conda activate <environment-name>
+
+#list
+conda env list
+#or
+conda info --envs
+
+## ENV
+conda create -y --name <env_name> python==3.7
+conda install -f -y -q --name <env_name> -c conda-forge --file requirements.txt
+conda activate <env_name>
+...
+conda deactivate
+
+
+
+
+# Install requirements
+conda install -f -y -q --name fom -c conda-forge --file requirements.txt
+
+
+
+
+
+##################################################
+##   PIP 
+https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html
+
+# install virtualenv
+sudo apt-get install python-pip
+sudo pip install virtualenv
+sudo pip install virtualenvwrapper
+
+# add to ~/.bashrc
+export WORKON_HOME=~/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
+source ~/.bashrc
+
+# make environment
+mkvirtualenv <env_name> -p python3
+...
+deactivate
+
+# list virtual environments lsvirtualenv
+lsvirtualenv
+
+# show details
+showvirtualenv <env_name>
+
+
+pip3 install -r requirements.txt
+
+
+
+
+
+
+
+python demo.py  --config config/vox-adv-256.yaml \
+--driving_video path/to/driving \
+--source_image path/to/source \
+--checkpoint ../Downloads/vox-adv-cpk.pth.tar \
+--relative \
+--adapt_scale
