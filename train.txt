@@ -201,36 +201,25 @@ python3 train.py \
 --model_save_latest_path ./pth_latest
 
 
+
 ===================================================
 ===================================================
 ===================================================
 
 
+===================Train MobileNet_V3_Small===========================
+111111111
 
-
-===================Train LightNet===========================
-
+EXAMPLES TRAINED:
+# ARCFACE CASIA_Webface_160 Epoch-
+# LFW-      0.         
+# CALFW-    0.     
+# CPLFW-    0.    
+# CFP_FF-   0.   
+# CFP_FP-   0.
+# LOSS- 
 python3 train.py \
---model_type LightNet \
---data_dir ./data/CASIA-Webface_160 \
---batch_size 16 \
---batch_size_test 16 \
---evaluate_batch_size 16 \
---criterion_type arcface \
---total_loss_type softmax \
---optimizer_type sgd_bn \
---margin_s 32.0 \
---margin_m 0.5 \
---validation_set_split_ratio 0.0 \
---lr 0.1 \
---lr_schedule_steps 20 40 60 \
---apex_opt_level 0 
-===================================================
-===================================================
-===================================================
-
-python3 train.py \
---model_type ResNet_50 \
+--model_type MobileNet_V3_Small \
 --data_dir ./data/CASIA_Webface_160 \
 --batch_size 512 \
 --batch_size_test 512 \
@@ -242,37 +231,31 @@ python3 train.py \
 --margin_m 0.5 \
 --validation_set_split_ratio 0.0 \
 --lr 0.1 \
---lr_schedule_steps 10 40 55 \
---apex_opt_level 2 
-
+--lr_schedule_steps 20 40 60 \
+--epochs 100 \
+--apex_opt_level 2 \
+--model_save_latest_path ./pth_latest
 
 ===================================================
 ===================================================
 ===================================================
 
-TODO:
-+++fix label appearance
-+++remove deprecation warnings
-+++downlad setups
-+++Find Mobile Model
-- Run in C++
 
 
+##### TEST LOCAL MAC RUN
 
-
-
-----------------
-
-Contents:
-
-1. QuickStart (Lanister vs Targarien dataset creation)
-2. Train
-3. Dataset Cleanup (privide dirty dataset and clean this up)
-
-
-Downloads:
-0. model pth
-1. got folder
-2. train ... datasets
-
-
+python3 train.py \
+--model_type MobileNet_V3_Large \
+--data_dir ./data/CASIA-WebFace_160 \
+--batch_size 4 \
+--batch_size_test 4 \
+--evaluate_batch_size 4 \
+--criterion_type arcface \
+--total_loss_type softmax \
+--optimizer_type sgd_bn \
+--margin_s 32.0 \
+--margin_m 0.5 \
+--validation_set_split_ratio 0.0 \
+--lr 0.1 \
+--lr_schedule_steps 20 40 60 \
+--epochs 12
