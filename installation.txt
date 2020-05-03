@@ -4,6 +4,8 @@ TODO:
 +++remove deprecation warnings
 +++downlad setups
 +++Find Mobile Model
+- Video Example (example video labeling, and gif for readme)
+- jupyter notebook quick example
 - Run in C++
 
 

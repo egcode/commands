@@ -166,13 +166,6 @@ python3 train.py \
 
 
 
-
-
-
-
-
-
-
 ===================Train MobileNet===========================
 EXAMPLES TRAINED:
 # ARCFACE MS_Celeb_1M_112_filtered Epoch-75
@@ -208,8 +201,6 @@ python3 train.py \
 
 
 ===================Train MobileNet_V3_Small===========================
-111111111
-
 EXAMPLES TRAINED:
 # ARCFACE CASIA_Webface_160 Epoch-
 # LFW-      0.         
@@ -227,7 +218,7 @@ python3 train.py \
 --criterion_type arcface \
 --total_loss_type softmax \
 --optimizer_type sgd_bn \
---margin_s 32.0 \
+--margin_s 28.0 \
 --margin_m 0.5 \
 --validation_set_split_ratio 0.0 \
 --lr 0.1 \
