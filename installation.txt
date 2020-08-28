@@ -63,6 +63,8 @@ conda deactivate
 conda install -f -y -q --name fom -c conda-forge --file requirements.txt
 
 
+# For Model Tracing
+conda install pytorch==1.5.0 torchvision==0.6.0 -c pytorch
 
 
 
@@ -101,9 +103,3 @@ pip3 install -r requirements.txt
 
 
 
-python demo.py  --config config/vox-adv-256.yaml \
---driving_video path/to/driving \
---source_image path/to/source \
---checkpoint ../Downloads/vox-adv-cpk.pth.tar \
---relative \
---adapt_scale
